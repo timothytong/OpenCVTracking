@@ -55,23 +55,22 @@ int main(int argc, char* argv[]){
         printf("v_max: %d\n", v_threshold_max);
         printf("v_min: %d\n", v_threshold_min);
         
-        /*
+        
          inRange(HSVcam,Scalar(h_threshold_min, s_threshold_min, v_threshold_min),
          Scalar(h_threshold_max, s_threshold_max, v_threshold_max),
          thresholdCam);
-         */
         
         
+        /*
         inRange(HSVcam,Scalar(0, 101, 95),
                 Scalar(256, 180, 139),
                 thresholdCam);
-        
+        */
         
         
         imshow("HSV", HSVcam);
         imshow("RAW", Webcam);
         imshow("Binary threshold", thresholdCam);
-        
         
         // Lower the refresh rate so it doesn't die...
         waitKey(15);
